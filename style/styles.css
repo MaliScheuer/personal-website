@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;  
+}
+
+body {
+
+    font-family: helvetica;
+}
+
+header {
+    
+    background-color: lightslategrey;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
