@@ -202,7 +202,9 @@ h4 {
 
 .footer{
       margin-bottom: 0; 
-      background-color: lightgray;
+      background-color: lightslategray;
       color: white; 
       padding: 20px; 
+      font-size: 0.7rem; 
+
   }
