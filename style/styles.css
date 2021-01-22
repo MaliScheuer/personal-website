@@ -7,35 +7,33 @@ body {
     font-family: "Verdana";
     margin: 0 auto;
     font-size: 18px;
- 
+    color: #262626; 
 }
 
 header {
     
-    background-color: green;
+    background-color: lightslategray;
     padding: 2rem;
     text-align: left;
-    
 }
 
 
 
 a {
     text-decoration: none;
-    color: lightslategray;
-    
+
 }
 
 nav a {
-    text-decoration: underline;
-    color: white;
+    color: white; 
+    font-size: 0.9rem; 
+    margin-right: 20px; 
 }
 
 .portal-items a {
     color: white;
-    margin-top: 100px; 
+  
     
-   
 }
 
 h1 {
@@ -61,12 +59,53 @@ h3 {
   
 }
 
-ul {
+
+h4 {
+    text-align: center;
+    margin: 50px auto 15px auto;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    font-weight: 50;
+  
+}
+
+
+.interessen ul {
     list-style: none;
-    background-color: lightslategray; 
     padding: 2rem;
     margin: 0px;
+    text-align: center; 
 }
+
+.interessen li {
+    display: inline-block;
+    background-color: lightslategray;
+    color: white; 
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px; 
+  
+}
+
+.skills ul {
+    list-style: none;
+    padding: 2rem;
+    margin: 0px;
+    text-align: center; 
+}
+
+.skills li {
+    display: inline-block;
+    background-color: lightslategray;
+    color: white; 
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px; 
+  
+}
+
+
+
 
 .headerbild {
     text-align: center;
@@ -81,6 +120,15 @@ ul {
     text-align: center;
     margin-bottom: 30px; 
 }
+
+.email a {
+    color: lightslategray; 
+}
+
+.telnr a {
+    color: lightslategray; 
+}
+
 
 .subline {
     text-align:left;
@@ -97,17 +145,64 @@ ul {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    padding-bottom: 50px; 
+    align-content: center; 
+    padding-bottom: 20px; 
     
 }
 
 .portal-items {
-    margin: 0 50px;
     text-align: center;
+    width: 45%; 
     
 }
 
-.subline-portale {
-    color: white; 
+.interessen {
+    background-color: lightgray; 
+    padding: 10px; 
+    margin-bottom: 30px; 
+}
+
+.skills {
+    background-color: lightgray; 
+    padding: 10px; 
+}
+
+
+.section-biografie {
     
+    background-color: lightgrey; 
+    padding: 30px; 
+    
+}
+
+
+.job {
+    list-style: none; 
+    font-weight: bold; 
+
   
+}
+
+
+.zeitraum {
+    list-style: none;  
+    color: lightslategray;
+ 
+    font-size: 0.9rem; 
+    margin: 5px 0; 
+       
+}
+
+
+.unternehmen{
+    list-style: none; 
+    font-size: 0.9rem; 
+    
+}
+
+.footer{
+      margin-bottom: 0; 
+      background-color: lightgray;
+      color: white; 
+      padding: 20px; 
+  }
