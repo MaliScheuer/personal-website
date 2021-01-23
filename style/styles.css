@@ -22,10 +22,12 @@ header {
 }
 
 .intro-text {
-    text-align: left;
+    text-align: center;
     
 }
 
+
+/* Grid Intro */
 .intro {
     display:grid;
     text-align: left; 
@@ -42,41 +44,45 @@ header {
 
     .intro-text {
         margin-left: 20px; 
-    }
-    
+        text-align: left; 
+    } 
 }
 
+/* End Grid Intro */
+
+
+/* Grid Interessen & Skills */
 .interessen-skills {
     display:grid;
 }
-
 
 @media (min-width: 768px){
     .interessen-skills {
         grid-template-columns: 1fr 1fr; 
         grid-gap: 60px;  
-    }
-    .divide {
-        visibility: hidden;
-    }
+    } 
+}
+/* End Grid Interessen & Skills */
+
+
+/* Grid Portale */
+@media (min-width: 300px){
+    .portale {
+        grid-template-columns: 1fr 1fr; 
+        
+    } 
 }
 
-a {
-    text-decoration: none;
-
+@media (min-width: 1000px){
+    .portale {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+         
+    } 
 }
+/* End Grid Portale */
 
-nav a {
-    color: white; 
-    font-size: 0.9rem; 
-    margin-right: 20px; 
-}
 
-.portal-items a {
-    color: white;
-  
-    
-}
+/* Styling Headlines*/
 
 h1 {
     font-size: 2.7rem;
@@ -103,20 +109,79 @@ h3 {
 
 
 h4 {
-    text-align: center;
-    margin: 50px auto 15px auto;
+    text-align: left;
+    margin: 50px auto 15px 30px;
     font-size: 1.3rem;
     letter-spacing: 5px;
-    font-weight: 50;
-  
+    font-weight: 50; 
 }
 
-hr {
+.subline {
+    text-align:left;
+    letter-spacing: 3px;
+}
+/* End Styling Headlines*/
+
+
+
+/* Text & Anchor Stylings*/
+.telnr {
+    text-align:center;
+
+}
+
+.email {
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: white; 
+    font-size: 0.9rem; 
+    margin-right: 20px; 
+}
+
+.email a {
+    color: lightslategray; 
+}
+
+.telnr a {
+    color: lightslategray; 
+}
+
+
+.portal-items a {
+    color: white;
+     
+}
+
+.intro {
+    padding: 2rem;
+    text-align: center;
+    margin-right: 20px; 
+}
+
+ 
+
+/* End Text & Anchor Stylings*/
+
+
+/* Interest & Skills*/
+
+.interessen {
+    background-color: lightgray; 
     
-    border: 10px solid white; 
-
 }
 
+.skills {
+    background-color: lightgray;
+    
+}
 
 .interessen ul {
     list-style: none;
@@ -152,64 +217,22 @@ hr {
   
 }
 
+/* End Interest & Skills*/
 
 
-.telnr {
-    text-align:center;
-
-}
-
-.email {
-    text-align: center;
-    margin-bottom: 30px; 
-}
-
-.email a {
-    color: lightslategray; 
-}
-
-.telnr a {
-    color: lightslategray; 
-}
-
-
-.subline {
-    text-align:left;
-    letter-spacing: 3px;
-}
-
-.intro {
-    padding: 2rem;
-    text-align: center;
-}
 
 .portale {
     background-color: lightslategray;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    align-content: center; 
-    padding-bottom: 20px; 
-    
+    display: grid;
+    justify-items: center;
+    padding-bottom: 20px;    
 }
 
 .portal-items {
-    text-align: center;
-    width: 45%; 
-    
+    text-align: center;    
 }
 
 
-
-.interessen {
-    background-color: lightgray; 
-    
-}
-
-.skills {
-    background-color: lightgray;
-    
-}
 
 
 .section-biografie {
@@ -219,6 +242,14 @@ hr {
     
 }
 
+
+
+.section-weiterbildung {
+    
+    background-color: lightgrey; 
+    padding: 30px; 
+    
+}
 
 .job {
     list-style: none; 
@@ -246,6 +277,7 @@ hr {
 
 .footer{
       margin-bottom: 0; 
+      margin-top: 70px; 
       background-color: lightslategray;
       color: white; 
       padding: 20px; 
