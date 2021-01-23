@@ -14,10 +14,52 @@ header {
     
     background-color: lightslategray;
     padding: 2rem;
+   
+}
+
+.headerbild {
+    text-align: center;
+}
+
+.intro-text {
     text-align: left;
+    
+}
+
+.intro {
+    display:grid;
+    text-align: left; 
+    
+}
+
+@media (min-width: 768px){
+    .intro {
+        grid-template-columns: 1fr 3fr;
+    }
+    .headerbild {
+        margin-top: 50px; 
+    }
+
+    .intro-text {
+        margin-left: 20px; 
+    }
+    
+}
+
+.interessen-skills {
+    display:grid;
 }
 
 
+@media (min-width: 768px){
+    .interessen-skills {
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 60px;  
+    }
+    .divide {
+        visibility: hidden;
+    }
+}
 
 a {
     text-decoration: none;
@@ -69,6 +111,12 @@ h4 {
   
 }
 
+hr {
+    
+    border: 10px solid white; 
+
+}
+
 
 .interessen ul {
     list-style: none;
@@ -105,11 +153,6 @@ h4 {
 }
 
 
-
-
-.headerbild {
-    text-align: center;
-}
 
 .telnr {
     text-align:center;
@@ -156,15 +199,16 @@ h4 {
     
 }
 
+
+
 .interessen {
     background-color: lightgray; 
-    padding: 10px; 
-    margin-bottom: 30px; 
+    
 }
 
 .skills {
-    background-color: lightgray; 
-    padding: 10px; 
+    background-color: lightgray;
+    
 }
 
 
