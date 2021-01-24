@@ -58,8 +58,14 @@ header {
 @media (min-width: 768px){
     .interessen-skills {
         grid-template-columns: 1fr 1fr; 
-        grid-gap: 60px;  
+        grid-gap: 40px;  
     } 
+}
+
+@media (max-width: 770px){
+    .interessen-skills{
+        grid-gap: 50px; 
+    }
 }
 /* End Grid Interessen & Skills */
 
@@ -73,13 +79,15 @@ header {
     } 
 }
 
-@media (min-width: 1000px){
+@media (min-width: 768px){
     .portale {
         grid-template-columns: 1fr 1fr 1fr 1fr; 
          
     } 
 }
 /* End Grid Portale */
+
+/* Grid Berufserfahrung*/
 .berufserfahrung {
     display:grid; 
 }
@@ -137,7 +145,7 @@ h3 {
     font-size: 1.5rem;
     letter-spacing: 5px;
     font-weight: 70;
-  
+    color: black; 
 }
 
 
@@ -158,6 +166,11 @@ h4 {
 
 
 /* Text & Anchor Stylings*/
+.intro {
+    padding: 2rem;
+    text-align: center;
+    margin-right: 20px; 
+}
 .telnr {
     text-align:center;
 
@@ -181,25 +194,20 @@ nav a {
 
 .email a {
     color: lightslategray; 
+   
+}
+
+.email a:hover {
+    text-decoration:none; color: black; 
 }
 
 .telnr a {
     color: lightslategray; 
 }
 
-
-.portal-items a {
-    color: white;
-     
+.telnr a:hover {
+    text-decoration:none; color: black; 
 }
-
-.intro {
-    padding: 2rem;
-    text-align: center;
-    margin-right: 20px; 
-}
-
- 
 
 /* End Text & Anchor Stylings*/
 
@@ -249,11 +257,10 @@ nav a {
     border-radius: 5px; 
   
 }
-
 /* End Interest & Skills*/
 
 
-
+/* Portale Section */
 .portale {
     background-color: lightslategray;
     display: grid;
@@ -262,12 +269,17 @@ nav a {
 }
 
 .portal-items {
-    text-align: center;    
+    text-align: center; 
+    
 }
 
+.portal-items:hover {
+    transform: scale(1.2)
+}
+/* End Portale Section */
 
 
-
+/* About Me Section */
 .section-berufserfahrung {
     
     background-color: lightgrey; 
@@ -275,20 +287,16 @@ nav a {
     
 }
 
-
-
 .section-weiterbildung {
     
     background-color: lightgrey; 
-    padding: 30px; 
-    
+    padding: 30px;    
 }
+
 
 .job {
     list-style: none; 
-    font-weight: bold; 
-
-  
+    font-weight: bold;  
 }
 
 
@@ -297,16 +305,17 @@ nav a {
     color: lightslategray;
  
     font-size: 0.9rem; 
-    margin: 5px 0; 
-       
+    margin: 5px 0;       
 }
 
 
 .unternehmen{
     list-style: none; 
-    font-size: 0.9rem; 
-    
+    font-size: 0.9rem;   
 }
+/* End About Me Section */
+
+
 
 .footer{
       margin-bottom: 0; 
@@ -315,5 +324,7 @@ nav a {
       color: white; 
       padding: 20px; 
       font-size: 0.7rem; 
-
   }
+
+  
+  
