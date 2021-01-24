@@ -47,7 +47,6 @@ header {
         text-align: left; 
     } 
 }
-
 /* End Grid Intro */
 
 
@@ -69,6 +68,7 @@ header {
 @media (min-width: 300px){
     .portale {
         grid-template-columns: 1fr 1fr; 
+         
         
     } 
 }
@@ -80,7 +80,40 @@ header {
     } 
 }
 /* End Grid Portale */
+.berufserfahrung {
+    display:grid; 
+}
 
+@media (min-width: 768px){
+    .berufserfahrung{
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 10px; 
+    
+    }
+    .section-berufserfahrung {
+        justify-items: center;
+    }
+}
+/* End Grid Berufserfahrung*/
+
+
+/* Grid Weiterbildung */
+.weiterbildung {
+    display:grid; 
+}
+
+@media (min-width: 768px){
+    .weiterbildung{
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 10px; 
+    
+    }
+    .section-weiterbildung {
+        justify-items: center;
+    }
+}
+
+/* End Grid Weiterbildung */
 
 /* Styling Headlines*/
 
@@ -109,7 +142,7 @@ h3 {
 
 
 h4 {
-    text-align: left;
+    text-align: center;
     margin: 50px auto 15px 30px;
     font-size: 1.3rem;
     letter-spacing: 5px;
@@ -235,7 +268,7 @@ nav a {
 
 
 
-.section-biografie {
+.section-berufserfahrung {
     
     background-color: lightgrey; 
     padding: 30px; 
