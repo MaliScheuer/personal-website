@@ -123,6 +123,32 @@ header {
 
 /* End Grid Weiterbildung */
 
+
+
+
+
+/* Grid Auslandserfahrung */
+.auslandserfahrung {
+    display:grid; 
+}
+
+@media (min-width: 700px){
+    .auslandserfahrung{
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 10px; 
+    
+    }
+    .section-auslandserfahrung {
+        justify-items: center;
+    }
+}
+
+/* End Grid Auslandserfahrung */
+
+
+
+
+
 /* Styling Headlines*/
 
 h1 {
@@ -215,12 +241,12 @@ nav a {
 /* Interest & Skills*/
 
 .interessen {
-    background-color: lightgray; 
+    background-color: #ededed;
     
 }
 
 .skills {
-    background-color: lightgray;
+    background-color: #ededed;
     
 }
 
@@ -282,14 +308,20 @@ nav a {
 /* About Me Section */
 .section-berufserfahrung {
     
-    background-color: lightgrey; 
+    background-color: #ededed;
     padding: 30px; 
     
 }
 
 .section-weiterbildung {
     
-    background-color: lightgrey; 
+    background-color: #ededed;
+    padding: 30px;    
+}
+
+.section-auslandserfahrung {
+    
+    background-color: #ededed;
     padding: 30px;    
 }
 
