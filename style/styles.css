@@ -36,17 +36,20 @@ header {
 
 @media (min-width: 768px){
     .intro {
-        grid-template-columns: 1fr 5fr;
+        grid-template-columns: 1fr 2fr;
     }
     .headerbild {
         margin-top: 50px; 
+       
     }
+
 
     .intro-text {
         margin-left: 20px; 
         text-align: left; 
     } 
 }
+
 /* End Grid Intro */
 
 
